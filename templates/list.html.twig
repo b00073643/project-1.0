@@ -1,0 +1,21 @@
+{% extends '_base.html.twig' %}
+
+{% block pageTitle %}Home Page {% endblock %}
+
+{% block main %}
+<h1>Great Detective Books</h1>
+
+    <table>
+
+        {% for book in books %}
+            <tr>
+                <th>
+                    <a href="/show/{{ book.id }}">{{ book.title }}</a>
+                </th>
+                <td>
+                    <img src="/images/{{ book.image }}">
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

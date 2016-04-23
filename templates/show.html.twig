@@ -1,0 +1,14 @@
+{% extends '_base.html.twig' %}
+
+{% block pageTitle %}Home Page {% endblock %}
+
+{% block main %}
+<h1>Great Detective Books</h1>
+
+    <h1>{{ book.title }}</h1>
+    Number of pages = {{ book.numPagesTotal }}
+    <br>
+    <img src="/images/{{ book.image }}">
+
+    </table>
+{% endblock %}

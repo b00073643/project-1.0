@@ -1,0 +1,23 @@
+{% extends '_base.html.twig' %}
+
+{% block pageTitle %}Home Page {% endblock %}
+
+{% block main %}
+<h1>list single student</h1>
+
+    <table>
+        <a href="/index.php?action=doubleSeen">Double the Seen</a><br>
+
+<tr>
+               <td> ID = {{ student.id }}
+                </td>
+                <td>
+                Seen =    {{ student.seen }}
+                </td>
+            </tr>
+    </table>
+
+    old seen was {{ oldseen }}<br>
+    new seen is {{ newseen }}<br>
+    student with id {{ student.id }} seen is now {{ student.seen  }}
+{% endblock %}

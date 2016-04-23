@@ -1,0 +1,18 @@
+{% extends '_base.html.twig' %}
+
+{% block pageTitle %}Home Page {% endblock %}
+
+{% block main %}
+<h1>list</h1>
+    <a href="/index.php?action=doubleIMMCredits">Double IMM module credits</a><br>
+
+    <table>
+<tr>
+               <td> ID = {{ module.id }}
+                </td>
+                <td>
+                Credits =    {{ module.credits }}
+                </td>
+            </tr>
+    </table>
+{% endblock %}

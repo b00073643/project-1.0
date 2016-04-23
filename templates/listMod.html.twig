@@ -1,0 +1,21 @@
+{% extends '_base.html.twig' %}
+
+{% block pageTitle %}Home Page {% endblock %}
+
+{% block main %}
+<h1>Great Detective Books</h1>
+
+    <table>
+
+        {% for module in modules %}
+            <tr>
+                <td>
+                ID = {{ module.id }}
+                </td>
+                <td>
+                Credits =    {{ module.credits }}
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

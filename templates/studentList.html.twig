@@ -1,0 +1,19 @@
+{% extends '_base.html.twig' %}
+
+{% block pageTitle %}Home Page {% endblock %}
+
+{% block main %}
+<h1>Student List</h1>
+    {% for student in students %}
+
+            <br><a href = "/listSingleStudent/{{ student.id }}">{{ student.id }}</a><br>
+            {{ student.firstname }}<br>
+            {{ student.joindate }}<br>
+            {{ student.lastgrading }}<br>
+            {{ student.currentgrade }}<br>
+            {{ student.seen }}<br>
+
+
+    {% endfor %}
+
+{% endblock %}
